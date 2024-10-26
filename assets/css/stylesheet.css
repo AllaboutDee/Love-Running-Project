@@ -1,5 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=Oswald:wght@200..700&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -50,7 +51,6 @@ h1 {
 
 #menu >li {
     margin-bottom: 1em;
-
 }
 
 .active {
@@ -71,7 +71,7 @@ nav {
 
 /* Nav toggle*/
 #nav-toggle:checked~nav {
-    display:block;
+    display: block;
 }
 
 #nav-toggle {
@@ -81,6 +81,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /* Main Content */
 main {
     background-color: lightblue;
@@ -91,7 +92,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: rgb(17, 149, 57);
+    background-color: orange;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -104,6 +105,7 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+    
     #menu {
         display: flex;
     }
@@ -126,5 +128,12 @@ footer {
     main {
         /*Push main content down to accommodate  larger header */
         margin-top: 79px;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
 }
